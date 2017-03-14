@@ -1,21 +1,24 @@
 {
   "name": "BangBuck",
-  "version": "0-0-1",
   "manifest_version": 1,
+  "version": "0.1.0",
   "description": "Replaces a resizing unit of measurement with a static one.",
+  "options_page": "options.html",
   "icons": {
     "16": "bangbuck_icon_16.png",
     "48": "bangbuck_icon_48.png",
     "128": "bangbuck_icon_128.png"
   },
   "background": {
-    "scripts": [ "background.js" ]
+    "scripts": [
+      "background.js"
+    ],
+    "persistent": false
   },
   "browser_action": {
     "default_title": "BangBuck",
     "default_icon": "bangbuck_icon_16.png"
   },
-  "options_page": "options.html",
   "permissions": [
     "background",
     "tabs",
