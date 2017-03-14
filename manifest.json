@@ -16,5 +16,10 @@
     "default_icon": "bangbuck_icon_16.png"
   },
   "options_page": "options.html",
-  "permissions": []
+  "permissions": [
+    "background",
+    "tabs",
+    "http://*/*",
+    "https://*/*"
+  ]
 }
