@@ -1,3 +1,6 @@
+console.log('background.js: working');
+
+
 chrome.extension.onMessage.addListener(
     function (request, sender, sendResponse) {
         if (request.action === 'prefs') {
@@ -16,6 +19,7 @@ chrome.extension.onMessage.addListener(
     }
 );
 
+
 function click(e) {
     chrome.tabs.query({currentWindow: true, active: true}, function (tabs) {
 
@@ -29,5 +33,6 @@ function click(e) {
 
 
 }
+
 
 chrome.browserAction.onClicked.addListener(click);
