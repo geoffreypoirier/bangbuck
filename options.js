@@ -1,4 +1,3 @@
-
 function init() {
     console.log('options.js: init()');
 
@@ -24,10 +23,13 @@ function init() {
 
 }
 
+init();
+
 
 function setCity(value){
 
 }
+
 
 function setYear(value) {
 
